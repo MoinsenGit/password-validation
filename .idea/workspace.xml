@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="maven.yml java-version 18 instead 19" />
+    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="maven.yml java-version 19 instead 18">
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,12 +38,61 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="de.neuefische" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MainTest.bloedsinnstest">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Passwordvalidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.bloedsinnstest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Passwordvalidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.MainTest" />
+      <option name="METHOD_NAME" value="bloedsinnstest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainTest.bloedsinnstest" />
+        <item itemvalue="JUnit.MainTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669369849883</updated>
-      <workItem from="1669369853076" duration="2165000" />
+      <workItem from="1669369853076" duration="3134000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669370402200</created>
@@ -64,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669372082933</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="maven.yml java-version 19 instead 18">
+      <created>1669372245431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669372245432</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +152,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Junit dependency added" />
     <MESSAGE value="maven.yml java-version 18 instead 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="maven.yml java-version 18 instead 19" />
+    <MESSAGE value="maven.yml java-version 19 instead 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven.yml java-version 19 instead 18" />
   </component>
 </project>
