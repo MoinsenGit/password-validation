@@ -6,18 +6,28 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
+    // Überprüfe erst die Länge des Passworts und
     @Test
-    void bloedsinnstest () {
-       // GIVEN
-        int number = 1;
+    void passwordIsLongEnough() {
+        // GIVEN
+        String password = "meinsicheresPassWort";
         // WHEN
-        int actual = Main.wirTesten();
+        String actual = Main.passwordValidation(password);
         // THEN
-        assertEquals(1, actual);
+        assertEquals("Das Passwort ist lang genug!", actual);
 
-        // assertTrue(true);
-
-        // mehrere asserts sind möglich
+        // assertTrue(true); // mehrere asserts sind möglich
     }
 
+    // Überprüfe, ob Zahlen enthalten sind
+    @Test
+    void passwordIsNotLongEnough() {
+        // GIVEN
+        String password = "toshort";
+        // WHEN
+        String actual = Main.passwordValidation(password);
+        // THEN
+        assertEquals("Das Passwort muss mindestens 8 Zeichen lang sein.", actual);
+
+    }
 }

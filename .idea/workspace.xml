@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="MainTest added">
+    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="surefire plugin in pom.xml added so maven runs tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/neuefische/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,20 @@
       <recent name="de.neuefische" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.bloedsinnstest">
+  <component name="RunManager" selected="JUnit.MainTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.Main" />
+      <module name="Passwordvalidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Passwordvalidation" />
       <extension name="coverage">
@@ -85,10 +99,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest.passwordIsNotLongEnough" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Passwordvalidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.MainTest" />
+      <option name="METHOD_NAME" value="passwordIsNotLongEnough" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Passwordvalidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.MainTest" />
+      <option name="METHOD_NAME" value="testname" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest.bloedsinnstest" />
         <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.passwordIsNotLongEnough" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest.testname" />
+        <item itemvalue="JUnit.MainTest.bloedsinnstest" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +149,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669369849883</updated>
-      <workItem from="1669369853076" duration="4411000" />
+      <workItem from="1669369853076" duration="7327000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669370402200</created>
@@ -137,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669373406064</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="surefire plugin in pom.xml added so maven runs tests">
+      <created>1669376626087</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669376626087</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +216,7 @@
     <MESSAGE value="maven.yml java-version 18 instead 19" />
     <MESSAGE value="maven.yml java-version 19 instead 18" />
     <MESSAGE value="MainTest added" />
-    <option name="LAST_COMMIT_MESSAGE" value="MainTest added" />
+    <MESSAGE value="surefire plugin in pom.xml added so maven runs tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="surefire plugin in pom.xml added so maven runs tests" />
   </component>
 </project>
