@@ -94,8 +94,6 @@ class MainTest {
 
     }
 
-
-
     // BONUS 2
     // Verbiete "schlechte" Passwörter wie "passwort" oder "123456"
 
@@ -119,13 +117,6 @@ class MainTest {
         assertEquals("Super Passwort - hat bestimmt kein Anderer!", actual);
 
     }
-
-
-
-
-
-    // Verbiete "schlechte" Passwörter wie "passwort" oder "123456"
-    // Schaue dir auf GitHub Labs weitere Einsteigervideos an
 
 
 }
