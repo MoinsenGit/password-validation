@@ -55,36 +55,68 @@ class MainTest {
     // Checke, ob kleine/große Buchstaben enthalten sind
 
     @Test
-    void passwordContainsNoUppercaseLetters() {
+    void passwordContainsOnlyLowercaseLetters() {
         // GIVEN
-        String password = "passwordwithnoppercase";
+        String password = "passwordwithnouppercase";
         // WHEN
         String actual = Main.PWcontainsUppercaseLetters(password);
         // THEN
-        assertEquals("Das Passwort soll mindestens einen großen Buchstaben enthalten!", actual);
+        assertEquals("Das Passwort muss auch mindestens einen Großbuchstaben enthalten!", actual);
     }
     @Test
-    void passwordContainsUppercaseLetters() {
+    void passwordContainsOnlyUppercaseLetters() {
+        // GIVEN
+        String password = "UPPERCASEFORTHEWIN";
+        // WHEN
+        String actual = Main.PWcontainsUppercaseLetters(password);
+        // THEN
+        assertEquals(          "Das Passwort muss auch mindestens einen Kleinbuchstaben enthalten!", actual);
+
+    }
+    @Test
+    void passwordContainsNoLetters() {
+        // GIVEN
+        String password = "126753289928";
+        // WHEN
+        String actual = Main.PWcontainsUppercaseLetters(password);
+        // THEN
+        assertEquals("Das Passwort muss mindestens einen kleinen und einen großen Buchstaben enthalten!", actual);
+
+    }
+    @Test
+    void passwordContainsLowercaseAndUppercaseLetters() {
         // GIVEN
         String password = "passwordContainsUppercase";
         // WHEN
         String actual = Main.PWcontainsUppercaseLetters(password);
         // THEN
-        assertEquals("Super Passwort - inklusive großen Buchstaben!", actual);
+        assertEquals("Super Passwort - inklusive kleinen und großen Buchstaben!", actual);
 
     }
+
+
 
     // BONUS 2
     // Verbiete "schlechte" Passwörter wie "passwort" oder "123456"
 
     @Test
-    void passwordIsToEasy() {
+    void passwordIsBad() {
         // GIVEN
         String password = "passwort";
         // WHEN
         String actual = Main.badPassword(password);
         // THEN
         assertEquals("Das Passwort ist zu einfach.", actual);
+
+    }
+    @Test
+    void passwordIsNotBad() {
+        // GIVEN
+        String password = "SuperDu83rPaSsWoRt";
+        // WHEN
+        String actual = Main.badPassword(password);
+        // THEN
+        assertEquals("Super Passwort - hat bestimmt kein Anderer!", actual);
 
     }
 
