@@ -51,13 +51,13 @@ public class Main {
                 containsLowercase = true;
             }
         }
-            if(containsUppercase && containsLowercase) {
+            if (containsUppercase && containsLowercase) {
             return "Super Passwort - inklusive kleinen und großen Buchstaben!";
         }
-            if(containsUppercase && !containsLowercase) {
+            if (containsUppercase && !containsLowercase) {
             return "Das Passwort muss auch mindestens einen Kleinbuchstaben enthalten!";
         }
-            if(containsLowercase && !containsUppercase) {
+            if (containsLowercase && !containsUppercase) {
             return "Das Passwort muss auch mindestens einen Großbuchstaben enthalten!";
         }
 
@@ -70,8 +70,13 @@ public class Main {
     // Verbiete "schlechte" Passwörter wie "passwort" oder "123456"
 
     public static String badPassword(String passwordPH) {
-
-        return "Das Passwort ist zu einfach.";
+        String[] badPasswords = {"passwort", "qwertz", "1234", "Passwort123"};
+        for (int i = 0; i < badPasswords.length; ++i) {
+            if (badPasswords[i].equals(passwordPH)) {
+              return "Das Passwort ist zu einfach.";
+            }
+        }
+        return "Super Passwort - hat bestimmt kein Anderer!";
     }
 
 

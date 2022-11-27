@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="check if password contains numbers added">
+    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="main PWcontainsUppercaseLetters rewritten so lowercase is tested too">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" afterDir="false" />
     </list>
@@ -215,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669557916811</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="main PWcontainsUppercaseLetters rewritten so lowercase is tested too">
+      <created>1669579991616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669579991617</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +233,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -241,6 +275,7 @@
     <MESSAGE value="surefire plugin in pom.xml added so maven runs tests" />
     <MESSAGE value="method and tests password length programmed" />
     <MESSAGE value="check if password contains numbers added" />
-    <option name="LAST_COMMIT_MESSAGE" value="check if password contains numbers added" />
+    <MESSAGE value="main PWcontainsUppercaseLetters rewritten so lowercase is tested too" />
+    <option name="LAST_COMMIT_MESSAGE" value="main PWcontainsUppercaseLetters rewritten so lowercase is tested too" />
   </component>
 </project>
