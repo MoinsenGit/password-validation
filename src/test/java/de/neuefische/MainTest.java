@@ -12,7 +12,7 @@ class MainTest {
         // GIVEN
         String password = "meinsicheresPassWort";
         // WHEN
-        String actual = Main.passwordValidation(password);
+        String actual = Main.passwordLength(password);
         // THEN
         assertEquals("Das Passwort ist lang genug!", actual);
 
@@ -25,9 +25,32 @@ class MainTest {
         // GIVEN
         String password = "toshort";
         // WHEN
-        String actual = Main.passwordValidation(password);
+        String actual = Main.passwordLength(password);
         // THEN
         assertEquals("Das Passwort muss mindestens 8 Zeichen lang sein.", actual);
 
     }
+     @Test
+    void passwordContainsNumbers() {
+        // GIVEN
+        String password = "hasNumbers245";
+        // WHEN
+        String actual = Main.PWcontainsNumbers(password);
+        // THEN
+        assertEquals("Super Passwort - mit Zahl und so!", actual);
+
+    }
+     @Test
+    void passwordContainsNoNumbers() {
+        // GIVEN
+        String password = "nonumbers";
+        // WHEN
+        String actual = Main.PWcontainsNumbers(password);
+        // THEN
+        assertEquals("Das Passwort muss mindestens eine Zahl enthalten!", actual);
+
+    }
+
+
+
 }
