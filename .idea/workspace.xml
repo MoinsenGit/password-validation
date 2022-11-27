@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="method and tests password length programmed">
+    <list default="true" id="d57529b8-3f5d-48cd-bc78-688a204d8f2e" name="Changes" comment="check if password contains numbers added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/neuefische/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/neuefische/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/neuefische/MainTest.java" afterDir="false" />
@@ -56,33 +56,7 @@
       <recent name="de.neuefische" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="CheckNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="de.neuefische.CheckNumber" />
-      <module name="Passwordvalidation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.neuefische.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="de.neuefische.GFG" />
-      <module name="Passwordvalidation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.neuefische.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MainTest.passwordIsToEasy">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.neuefische.Main" />
       <module name="Passwordvalidation" />
@@ -111,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.passwordIsNotLongEnough" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.passwordContainsNoUppercaseLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Passwordvalidation" />
       <extension name="coverage">
         <pattern>
@@ -121,7 +95,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="de.neuefische" />
       <option name="MAIN_CLASS_NAME" value="de.neuefische.MainTest" />
-      <option name="METHOD_NAME" value="passwordIsNotLongEnough" />
+      <option name="METHOD_NAME" value="passwordContainsNoUppercaseLetters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.passwordContainsUppercaseLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Passwordvalidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.MainTest" />
+      <option name="METHOD_NAME" value="passwordContainsUppercaseLetters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.passwordIsToEasy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Passwordvalidation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.neuefische.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.neuefische" />
+      <option name="MAIN_CLASS_NAME" value="de.neuefische.MainTest" />
+      <option name="METHOD_NAME" value="passwordIsToEasy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest.passwordIsToEasy" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="Application.CheckNumber" />
-        <item itemvalue="Application.GFG" />
-        <item itemvalue="JUnit.MainTest.passwordIsNotLongEnough" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest.passwordContainsUppercaseLetters" />
+        <item itemvalue="JUnit.MainTest.passwordContainsNoUppercaseLetters" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +153,7 @@
       <updated>1669369849883</updated>
       <workItem from="1669369853076" duration="9807000" />
       <workItem from="1669384814860" duration="116000" />
-      <workItem from="1669384999227" duration="11309000" />
+      <workItem from="1669384999227" duration="17440000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669370402200</created>
@@ -198,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669382471991</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="check if password contains numbers added">
+      <created>1669557916810</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669557916811</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +236,7 @@
     <MESSAGE value="MainTest added" />
     <MESSAGE value="surefire plugin in pom.xml added so maven runs tests" />
     <MESSAGE value="method and tests password length programmed" />
-    <option name="LAST_COMMIT_MESSAGE" value="method and tests password length programmed" />
+    <MESSAGE value="check if password contains numbers added" />
+    <option name="LAST_COMMIT_MESSAGE" value="check if password contains numbers added" />
   </component>
 </project>

@@ -14,7 +14,7 @@ class MainTest {
         // WHEN
         String actual = Main.passwordLength(password);
         // THEN
-        assertEquals("Das Passwort ist lang genug!", actual);
+        assertEquals("Super Passwort - schön lang!", actual);
 
         // assertTrue(true); // mehrere asserts sind möglich
     }
@@ -51,6 +51,49 @@ class MainTest {
 
     }
 
+    // BONUS 1
+    // Checke, ob kleine/große Buchstaben enthalten sind
+
+    @Test
+    void passwordContainsNoUppercaseLetters() {
+        // GIVEN
+        String password = "passwordwithnoppercase";
+        // WHEN
+        String actual = Main.PWcontainsUppercaseLetters(password);
+        // THEN
+        assertEquals("Das Passwort soll mindestens einen großen Buchstaben enthalten!", actual);
+    }
+    @Test
+    void passwordContainsUppercaseLetters() {
+        // GIVEN
+        String password = "passwordContainsUppercase";
+        // WHEN
+        String actual = Main.PWcontainsUppercaseLetters(password);
+        // THEN
+        assertEquals("Super Passwort - inklusive großen Buchstaben!", actual);
+
+    }
+
+    // BONUS 2
+    // Verbiete "schlechte" Passwörter wie "passwort" oder "123456"
+
+    @Test
+    void passwordIsToEasy() {
+        // GIVEN
+        String password = "passwort";
+        // WHEN
+        String actual = Main.badPassword(password);
+        // THEN
+        assertEquals("Das Passwort ist zu einfach.", actual);
+
+    }
+
+
+
+
+
+    // Verbiete "schlechte" Passwörter wie "passwort" oder "123456"
+    // Schaue dir auf GitHub Labs weitere Einsteigervideos an
 
 
 }
