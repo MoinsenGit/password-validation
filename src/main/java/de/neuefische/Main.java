@@ -28,9 +28,9 @@ public class Main {
     }
 
     // Überprüfe dann, ob Zahlen enthalten sind.
-    public static String PWcontainsNumbers(String lengthPH) {
-        for (int i = 0; i < lengthPH.length(); ++i) {
-            if (Character.isDigit(lengthPH.charAt(i))) {
+    public static String PWcontainsNumbers(String passwordPH) {
+        for (int i = 0; i < passwordPH.length(); ++i) {
+            if (Character.isDigit(passwordPH.charAt(i))) {
                 return "Super Passwort - mit Zahl und so!";
             }
         }
@@ -41,12 +41,27 @@ public class Main {
     // Checke, ob kleine/große Buchstaben enthalten sind
 
     public static String PWcontainsUppercaseLetters(String passwordPH) {
-        for(int i=0;i < passwordPH.length();i++) {
+        boolean containsUppercase = false;
+        boolean containsLowercase = false;
+        for(int i=0; i < passwordPH.length(); i++) {
             if (Character.isUpperCase(passwordPH.charAt(i))) {
-                return "Super Passwort - inklusive großen Buchstaben!";
+                containsUppercase = true;
+            }
+            if (Character.isLowerCase(passwordPH.charAt(i))) {
+                containsLowercase = true;
             }
         }
-        return "Das Passwort soll mindestens einen großen Buchstaben enthalten!";
+            if(containsUppercase && containsLowercase) {
+            return "Super Passwort - inklusive kleinen und großen Buchstaben!";
+        }
+            if(containsUppercase && !containsLowercase) {
+            return "Das Passwort muss auch mindestens einen Kleinbuchstaben enthalten!";
+        }
+            if(containsLowercase && !containsUppercase) {
+            return "Das Passwort muss auch mindestens einen Großbuchstaben enthalten!";
+        }
+
+        return "Das Passwort muss mindestens einen kleinen und einen großen Buchstaben enthalten!";
 
     }
 
@@ -60,6 +75,5 @@ public class Main {
     }
 
 
-    // Schaue dir auf GitHub Labs weitere Einsteigervideos an
 }
 
